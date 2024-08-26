@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="controler.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <h1>Evaluation d'un modéle:</h1>
+        </legend>
+        <form action="evaluation.php" method="post" onsubmit="return verif()">
+            <table>
+                <tr>
+                    <td>
+                        <label for="">N°permis:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="numpermis" id="npermis">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Modéle Testé:</label>
+                    </td>
+                    <td>
+                        <select id="modele" name="modele">
+                            <option  value="" selected>choisir un modéle</option>
+                            <option value="Wallis Iris">Wallis Iris</option>
+                            <option value="Wallis 619">Wallis 619</option>
+                            <option value="Wallis 219">Wallis 219</option>
+                            <option value="Wallis Wolf">Wallis Wolf</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Note attribués:</label>
+                    </td>                  
+                    <td>
+                        <label for="">Sécurité:</label>
+                        <input type="number" name="securite" id="srt">
+                        <label for="">Conduite:</label>
+                        <input type="number" name="conduite" id="cdt">
+                        <label for="">Confort:</label>
+                        <input type="number" name="confort" id="cft">
+                    </td>
+                </tr> 
+            </table>
+            <label>Je ne suis pas un robot:</label> 
+            <input type="checkbox" name="" id="cc">
+            <hr>
+            <button type="submit">Valider</button>
+            <button type="reset">Annuler</button><br>
+            <a href="">Retour</a>
+        </form>
+    </fieldset>
+</body>
+</html>
